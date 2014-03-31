@@ -28,6 +28,9 @@
                 <filename>index.html</filename>
                 <filename>mytest.php</filename>
                 <filename>controller.php</filename>
+                <folder>controllers</folder>
+                <folder>helpers</folder>
+                <folder>models</folder>
                 <folder>views</folder>
         </files>
  
