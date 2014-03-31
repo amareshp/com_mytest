@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="credentials"
+		label="Name">
+
+		<field name="first_name" type="text"
+			class="validate-username"
+			filter="username"
+			label="First Name"
+			size="25"
+			required="true"
+			validate="username"
+		/>
+
+		<field name="last_name" type="text"
+			class="validate-password"
+			required="true"
+			filter="raw"
+			label="Last Name"
+			size="25"
+		/>
+		
+	</fieldset>
+
+		<field name="secretkey" type="text"
+			class=""
+			required="false"
+			filter="int"
+			label="JGLOBAL_SECRETKEY"
+			size="25"
+		/>
+
+	<fieldset>
+		<field name="return" type="hidden" />
+	</fieldset>
+</form>
