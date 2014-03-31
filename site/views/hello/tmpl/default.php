@@ -29,3 +29,7 @@ unset($this->msg);
 <div class="control-group">
 	<?php $this->msg = $this->get('Msg'); if(isset($this->msg)) : echo '<h1><br>' . $this->msg . '</h1>'; endif; ?>
 </div>
+
+<div class="control-group">
+	<?php $this->userdetails = $this->get('Userdetails'); if(isset($this->userdetails)) : echo '<h1><br>' . $this->userdetails . '</h1>'; endif; ?>
+</div>

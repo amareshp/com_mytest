@@ -31,4 +31,15 @@ class MytestModelHello extends JModelForm {
 		}
 		return $this->msg;
 	}
+
+	public function getUserdetails(){
+		$user = JFactory::getUser();
+		if($user->guest){
+			$this->userdetails = 'You are not logged in.';
+		} else {
+			$this->userdetails = 'Welcome ' . $user->name . '!';
+		}
+		return $this->userdetails;
+	}
+	
 }
