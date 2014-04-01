@@ -12,12 +12,16 @@ jimport('joomla.application.component.controller');
 class MytestController extends JControllerLegacy {
 
 	//handle task=sayhello
-	public function helloform($cachable = false, $urlparams = false){
+	public function comms($cachable = false, $urlparams = false){
 		$document	= JFactory::getDocument();
-		$vName   = $this->input->getCmd('view', 'hello');
+		$vName   = $this->input->getCmd('view', 'Comms');
 		$vFormat = $document->getType();
 		$lName   = $this->input->getCmd('layout', 'default');
 		$model = $this->getModel($vName);
+		
+		// set default view if not set
+		$input = JFactory::getApplication()->input;
+		$input->set('view', $input->getCmd('view', 'Comms'));
 		
 		$view = $this->getView($vName, $vFormat);
 		$view->setModel($model, true);
