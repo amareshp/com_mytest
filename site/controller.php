@@ -11,7 +11,7 @@ jimport('joomla.application.component.controller');
  */
 class MytestController extends JControllerLegacy {
 
-	//handle task=sayhello
+	
 	public function comms($cachable = false, $urlparams = false){
 		$document	= JFactory::getDocument();
 		$vName   = $this->input->getCmd('view', 'Comms');

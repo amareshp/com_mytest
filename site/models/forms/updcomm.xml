@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="updcomm">
+        <fieldset name="updcomm">
+ 
+        <field
+            name="id"
+            type="sql"
+            multiple="false"
+            size="1"
+            label="COM_MYTEST_FORM_LBL_UPDMYTEST_ID"
+            description="COM_MYTEST_FORM_DESC_UPDMYTEST_ID"
+            query="select id, comm_name from #__mytest"
+            key_field="id"
+            value_field="comm_name"
+            default="0"
+            required="true"
+            >
+            <option value="">JOPTION_SELECT_ID</option>
+        </field>
+ 
+        <field
+            name="comm_name"
+            type="text"
+            description="COM_MYTEST_FORM_DESC_UPDMYTEST_COMM_NAME"
+            label="COM_MYTEST_FORM_LBL_UPDMYTEST_COMM_NAME"
+            required="true"
+            size="50" />
+ 
+        </fieldset>
+</form>
