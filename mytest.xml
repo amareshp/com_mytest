@@ -69,9 +69,9 @@
                         <folder>tables</folder>
                         <folder>views</folder>
                 </files>
-                <languages folder="admin">
-                	<language tag="en-GB">language/en-GB/en-GB.com_mytest.ini</language>
-                	<language tag="en-GB">language/en-GB/en-GB.com_mytest.sys.ini</language>
+                <languages folder="admin/language">
+                	<language tag="en-GB">en-GB/en-GB.com_mytest.ini</language>
+                	<language tag="en-GB">en-GB/en-GB.com_mytest.sys.ini</language>
                 </languages>
         </administration>
  
